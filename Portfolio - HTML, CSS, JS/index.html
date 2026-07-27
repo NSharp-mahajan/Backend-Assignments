@@ -11,16 +11,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Font Awesome for clean iconography -->
+    <!-- Font Awesome for iconography -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Scroll Progress Indicator -->
-    <div id="scroll-progress" aria-hidden="true"></div>
-
     <!-- Sticky Navigation Bar -->
     <header class="navbar" id="navbar">
         <div class="container nav-container">
@@ -51,16 +48,16 @@
         <section id="home" class="hero-section">
             <div class="ambient-glow" aria-hidden="true"></div>
             <div class="container hero-container">
-                <div class="hero-content reveal">
+                <div class="hero-content">
                     <div class="hero-badge">
-                        <span class="pulse-dot"></span> Available for Opportunities &amp; Hackathons
+                        <span class="status-dot"></span> Available for Opportunities &amp; Hackathons
                     </div>
                     <h1 class="hero-title">
                         Hi, I'm <span class="text-gradient">Natansh Mahajan</span>
                     </h1>
                     <div class="typing-wrapper" aria-label="Role typing effect">
                         <span class="static-text">I am a </span>
-                        <span id="typing-text" class="typing-text"></span>
+                        <span id="typing-text" class="typing-text">Engineering Student</span>
                         <span class="cursor">|</span>
                     </div>
                     <p class="hero-description">
@@ -81,15 +78,15 @@
                     </div>
                 </div>
                 
-                <div class="hero-image-wrapper reveal reveal-delay-2">
+                <div class="hero-image-wrapper">
                     <div class="hero-image-glow" aria-hidden="true"></div>
                     <div class="profile-card">
                         <img src="assets/profile.jpg" alt="Natansh Mahajan - AI & ML Enthusiast" class="profile-img" id="profile-pic">
-                        <div class="profile-floating-badge top-badge">
+                        <div class="profile-badge top-badge">
                             <i class="fas fa-brain"></i>
                             <span>AI &amp; ML Specialist</span>
                         </div>
-                        <div class="profile-floating-badge bottom-badge">
+                        <div class="profile-badge bottom-badge">
                             <i class="fas fa-code"></i>
                             <span>Full Stack Eng</span>
                         </div>
@@ -98,16 +95,17 @@
             </div>
         </section>
 
+        <!-- ABOUT SECTION -->
         <section id="about" class="section about-section">
             <div class="container">
-                <div class="section-header reveal">
+                <div class="section-header">
                     <span class="section-subtitle">DISCOVER MY JOURNEY</span>
                     <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
                     <div class="section-divider"></div>
                 </div>
 
                 <div class="about-grid">
-                    <article class="about-card main-about-card reveal">
+                    <article class="about-card main-about-card">
                         <div class="card-icon"><i class="fas fa-terminal"></i></div>
                         <h3>Engineering Student &amp; Tech Explorer</h3>
                         <p>
@@ -127,7 +125,7 @@
                         </div>
                     </article>
 
-                    <div class="about-sidebar reveal reveal-delay-2">
+                    <div class="about-sidebar">
                         <div class="info-tile">
                             <div class="tile-icon"><i class="fas fa-map-marker-alt"></i></div>
                             <div class="tile-content">
@@ -157,17 +155,18 @@
             </div>
         </section>
 
-        <!-- SKILLS SECTION -->
+        <!-- SKILLS SECTION (HTML/CSS Powered Progress Bars) -->
         <section id="skills" class="section skills-section">
             <div class="container">
-                <div class="section-header reveal">
+                <div class="section-header">
                     <span class="section-subtitle">TECHNICAL MASTERY</span>
                     <h2 class="section-title">My <span class="text-gradient">Skills</span></h2>
                     <div class="section-divider"></div>
                 </div>
 
                 <div class="skills-grid">
-                    <div class="skill-category-card reveal">
+                    <!-- Frontend Skills -->
+                    <div class="skill-category-card">
                         <div class="category-header">
                             <i class="fas fa-layer-group category-icon"></i>
                             <h3>Frontend Development</h3>
@@ -179,7 +178,7 @@
                                     <span class="skill-percent">95%</span>
                                 </div>
                                 <div class="progress-track">
-                                    <div class="progress-fill" data-progress="95%"></div>
+                                    <div class="progress-fill" style="width: 95%;"></div>
                                 </div>
                             </div>
                             <div class="skill-item">
@@ -188,7 +187,7 @@
                                     <span class="skill-percent">90%</span>
                                 </div>
                                 <div class="progress-track">
-                                    <div class="progress-fill" data-progress="90%"></div>
+                                    <div class="progress-fill" style="width: 90%;"></div>
                                 </div>
                             </div>
                             <div class="skill-item">
@@ -197,14 +196,14 @@
                                     <span class="skill-percent">85%</span>
                                 </div>
                                 <div class="progress-track">
-                                    <div class="progress-fill" data-progress="85%"></div>
+                                    <div class="progress-fill" style="width: 85%;"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                  
-                    <div class="skill-category-card reveal reveal-delay-1">
+                    <!-- Programming Languages -->
+                    <div class="skill-category-card">
                         <div class="category-header">
                             <i class="fas fa-code category-icon"></i>
                             <h3>Programming Languages</h3>
@@ -216,7 +215,7 @@
                                     <span class="skill-percent">90%</span>
                                 </div>
                                 <div class="progress-track">
-                                    <div class="progress-fill" data-progress="90%"></div>
+                                    <div class="progress-fill" style="width: 90%;"></div>
                                 </div>
                             </div>
                             <div class="skill-item">
@@ -225,7 +224,7 @@
                                     <span class="skill-percent">92%</span>
                                 </div>
                                 <div class="progress-track">
-                                    <div class="progress-fill" data-progress="92%"></div>
+                                    <div class="progress-fill" style="width: 92%;"></div>
                                 </div>
                             </div>
                             <div class="skill-item">
@@ -234,14 +233,14 @@
                                     <span class="skill-percent">80%</span>
                                 </div>
                                 <div class="progress-track">
-                                    <div class="progress-fill" data-progress="80%"></div>
+                                    <div class="progress-fill" style="width: 80%;"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Database -->
-                    <div class="skill-category-card reveal reveal-delay-2">
+                    <div class="skill-category-card">
                         <div class="category-header">
                             <i class="fas fa-database category-icon"></i>
                             <h3>Databases</h3>
@@ -253,7 +252,7 @@
                                     <span class="skill-percent">85%</span>
                                 </div>
                                 <div class="progress-track">
-                                    <div class="progress-fill" data-progress="85%"></div>
+                                    <div class="progress-fill" style="width: 85%;"></div>
                                 </div>
                             </div>
                             <div class="skill-item">
@@ -262,14 +261,14 @@
                                     <span class="skill-percent">82%</span>
                                 </div>
                                 <div class="progress-track">
-                                    <div class="progress-fill" data-progress="82%"></div>
+                                    <div class="progress-fill" style="width: 82%;"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Tools -->
-                    <div class="skill-category-card reveal">
+                    <div class="skill-category-card">
                         <div class="category-header">
                             <i class="fas fa-wrench category-icon"></i>
                             <h3>Tools &amp; Environments</h3>
@@ -281,7 +280,7 @@
                                     <span class="skill-percent">90%</span>
                                 </div>
                                 <div class="progress-track">
-                                    <div class="progress-fill" data-progress="90%"></div>
+                                    <div class="progress-fill" style="width: 90%;"></div>
                                 </div>
                             </div>
                             <div class="skill-item">
@@ -290,7 +289,7 @@
                                     <span class="skill-percent">92%</span>
                                 </div>
                                 <div class="progress-track">
-                                    <div class="progress-fill" data-progress="92%"></div>
+                                    <div class="progress-fill" style="width: 92%;"></div>
                                 </div>
                             </div>
                             <div class="skill-item">
@@ -299,14 +298,14 @@
                                     <span class="skill-percent">95%</span>
                                 </div>
                                 <div class="progress-track">
-                                    <div class="progress-fill" data-progress="95%"></div>
+                                    <div class="progress-fill" style="width: 95%;"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Other Specialties -->
-                    <div class="skill-category-card reveal reveal-delay-1">
+                    <div class="skill-category-card">
                         <div class="category-header">
                             <i class="fas fa-microchip category-icon"></i>
                             <h3>Specialized Domains</h3>
@@ -318,7 +317,7 @@
                                     <span class="skill-percent">85%</span>
                                 </div>
                                 <div class="progress-track">
-                                    <div class="progress-fill" data-progress="85%"></div>
+                                    <div class="progress-fill" style="width: 85%;"></div>
                                 </div>
                             </div>
                             <div class="skill-item">
@@ -327,7 +326,7 @@
                                     <span class="skill-percent">88%</span>
                                 </div>
                                 <div class="progress-track">
-                                    <div class="progress-fill" data-progress="88%"></div>
+                                    <div class="progress-fill" style="width: 88%;"></div>
                                 </div>
                             </div>
                             <div class="skill-item">
@@ -336,7 +335,7 @@
                                     <span class="skill-percent">90%</span>
                                 </div>
                                 <div class="progress-track">
-                                    <div class="progress-fill" data-progress="90%"></div>
+                                    <div class="progress-fill" style="width: 90%;"></div>
                                 </div>
                             </div>
                         </div>
@@ -348,7 +347,7 @@
         <!-- PROJECTS SECTION -->
         <section id="projects" class="section projects-section">
             <div class="container">
-                <div class="section-header reveal">
+                <div class="section-header">
                     <span class="section-subtitle">FEATURED WORK</span>
                     <h2 class="section-title">My <span class="text-gradient">Projects</span></h2>
                     <div class="section-divider"></div>
@@ -356,7 +355,7 @@
 
                 <div class="projects-grid">
                     <!-- Project 1: CyberCop -->
-                    <article class="project-card reveal">
+                    <article class="project-card">
                         <div class="project-image-wrapper">
                             <img src="assets/cybercop.jpg" alt="CyberCop AI Cybersecurity Platform" class="project-image">
                             <div class="project-overlay">
@@ -378,7 +377,7 @@
                                 <a href="https://github.com/NSharp-mahajan" target="_blank" rel="noopener" class="btn btn-outline">
                                     <i class="fab fa-github"></i> GitHub
                                 </a>
-                                <a href="#" onclick="alert('Live demo coming soon! Check GitHub for source code.'); return false;" class="btn btn-primary-sm">
+                                <a href="https://github.com/NSharp-mahajan" target="_blank" rel="noopener" class="btn btn-primary-sm">
                                     <i class="fas fa-external-link-alt"></i> Live Demo
                                 </a>
                             </div>
@@ -386,7 +385,7 @@
                     </article>
 
                     <!-- Project 2: Task Manager -->
-                    <article class="project-card reveal reveal-delay-1">
+                    <article class="project-card">
                         <div class="project-image-wrapper">
                             <img src="assets/task-manager.jpg" alt="Task Manager Web Application" class="project-image">
                             <div class="project-overlay">
@@ -408,7 +407,7 @@
                                 <a href="https://github.com/NSharp-mahajan" target="_blank" rel="noopener" class="btn btn-outline">
                                     <i class="fab fa-github"></i> GitHub
                                 </a>
-                                <a href="#" onclick="alert('Live demo coming soon! Check GitHub for source code.'); return false;" class="btn btn-primary-sm">
+                                <a href="https://github.com/NSharp-mahajan" target="_blank" rel="noopener" class="btn btn-primary-sm">
                                     <i class="fas fa-external-link-alt"></i> Live Demo
                                 </a>
                             </div>
@@ -416,7 +415,7 @@
                     </article>
 
                     <!-- Project 3: Hotel Booking System -->
-                    <article class="project-card reveal reveal-delay-2">
+                    <article class="project-card">
                         <div class="project-image-wrapper">
                             <img src="assets/hotel-booking.jpg" alt="Hotel Booking Management Application" class="project-image">
                             <div class="project-overlay">
@@ -438,7 +437,7 @@
                                 <a href="https://github.com/NSharp-mahajan" target="_blank" rel="noopener" class="btn btn-outline">
                                     <i class="fab fa-github"></i> GitHub
                                 </a>
-                                <a href="#" onclick="alert('Live demo coming soon! Check GitHub for source code.'); return false;" class="btn btn-primary-sm">
+                                <a href="https://github.com/NSharp-mahajan" target="_blank" rel="noopener" class="btn btn-primary-sm">
                                     <i class="fas fa-external-link-alt"></i> Live Demo
                                 </a>
                             </div>
@@ -451,13 +450,13 @@
         <!-- ACHIEVEMENTS SECTION -->
         <section id="achievements" class="section achievements-section">
             <div class="container">
-                <div class="section-header reveal">
+                <div class="section-header">
                     <span class="section-subtitle">MILESTONES &amp; RECOGNITION</span>
                     <h2 class="section-title">My <span class="text-gradient">Achievements</span></h2>
                     <div class="section-divider"></div>
                 </div>
 
-                <div class="timeline reveal">
+                <div class="timeline">
                     <!-- Achievement 1 -->
                     <div class="timeline-item">
                         <div class="timeline-dot"><i class="fas fa-trophy"></i></div>
@@ -534,7 +533,7 @@
         <!-- CONTACT SECTION -->
         <section id="contact" class="section contact-section">
             <div class="container">
-                <div class="section-header reveal">
+                <div class="section-header">
                     <span class="section-subtitle">GET IN TOUCH</span>
                     <h2 class="section-title">Contact <span class="text-gradient">Me</span></h2>
                     <div class="section-divider"></div>
@@ -542,7 +541,7 @@
 
                 <div class="contact-grid">
                     <!-- Contact Info Cards -->
-                    <div class="contact-info reveal">
+                    <div class="contact-info">
                         <h3>Let's build something extraordinary together</h3>
                         <p class="contact-intro">
                             Whether you have an exciting software project, a hackathon invitation, an engineering job opportunity, or just want to discuss AI breakthroughs, my inbox is open!
@@ -592,7 +591,7 @@
                     </div>
 
                     <!-- Contact Form -->
-                    <form class="contact-form reveal reveal-delay-2" id="contact-form" novalidate>
+                    <form class="contact-form" id="contact-form">
                         <h3>Send a Message</h3>
                         
                         <div class="form-group">
@@ -624,12 +623,12 @@
         </section>
     </main>
 
-    <!-- Scroll to Top Floating Button -->
+    <!-- Scroll to Top Button -->
     <button id="scroll-to-top" class="scroll-to-top-btn" aria-label="Scroll to top">
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <!-- Simple Resume Modal (Pure HTML/CSS/JS) -->
+    <!-- Resume Modal -->
     <div id="resume-modal" class="modal-overlay" aria-hidden="true">
         <div class="modal-card">
             <div class="modal-header">
@@ -658,10 +657,15 @@
     <!-- FOOTER -->
     <footer class="footer">
         <div class="container footer-container">
+            <div class="footer-logo">
+                <span>&lt;Natansh Mahajan /&gt;</span>
+            </div>
             <p class="copyright">&copy; 2026 Natansh Mahajan</p>
+            <p class="credit">Made with ❤️ using HTML &amp; CSS</p>
         </div>
     </footer>
 
+    <!-- Minimal Vanilla JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
