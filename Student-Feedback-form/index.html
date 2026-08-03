@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Feedback Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Student Feedback Form</h2>
+
+    <form id="feedbackForm">
+
+        <label>Student Name</label>
+        <input type="text" id="name">
+        <span class="error" id="nameError"></span>
+
+        <label>Email</label>
+        <input type="email" id="email">
+        <span class="error" id="emailError"></span>
+
+        <label>Course</label>
+        <select id="course">
+            <option value="">Select Course</option>
+            <option>Next.js</option>
+            <option>LangChain</option>
+            <option>Redis</option>
+            <option>Docker</option>
+        </select>
+        <span class="error" id="courseError"></span>
+
+        <label>Feedback</label>
+        <textarea id="feedback"></textarea>
+        <span class="error" id="feedbackError"></span>
+
+        <br><br>
+
+        <button type="submit">Submit Feedback</button>
+        <button type="button" id="deleteBtn">Delete Stored Data</button>
+
+    </form>
+
+    <h3 id="sessionUser"></h3>
+
+    <h2>Stored Feedback</h2>
+
+    <div id="storedData">
+        No feedback stored.
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

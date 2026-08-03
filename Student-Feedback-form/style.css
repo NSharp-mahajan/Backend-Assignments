@@ -1,0 +1,57 @@
+body{
+
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+}
+
+.container{
+
+    width:600px;
+    margin:30px auto;
+    background:white;
+    padding:20px;
+    border:1px solid #ccc;
+}
+
+label{
+
+    display:block;
+    margin-top:15px;
+    margin-bottom:5px;
+}
+
+input,
+select,
+textarea{
+
+    width:100%;
+    padding:8px;
+    box-sizing:border-box;
+}
+
+textarea{
+
+    height:80px;
+    resize:none;
+}
+
+button{
+
+    margin-top:20px;
+    padding:8px 15px;
+    cursor:pointer;
+}
+
+.error{
+
+    color:red;
+    font-size:13px;
+}
+
+#storedData{
+
+    margin-top:20px;
+    border:1px solid #ccc;
+    padding:15px;
+    background:#fafafa;
+}
