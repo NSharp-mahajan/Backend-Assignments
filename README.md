@@ -25,6 +25,7 @@ This repository showcases hands-on web design and JavaScript programming assignm
 |:---:| :--- | :--- | :--- | :--- |
 | **1** | **[Personal Portfolio Application](#1-personal-portfolio-web-application)** | HTML5, CSS3, Vanilla JS | Dark-themed personal developer portfolio with custom responsiveness, modal dialogues, and smooth transitions. | `[./Portfolio - HTML, CSS, JS/]` |
 | **2** | **[Student Management System](#2-student-management-system--array-methods-assignment)** | HTML5, CSS3, Vanilla JS | Beginner-friendly, clean single-page application demonstrating all 13 core JavaScript Array manipulation & iteration methods. | `[./Student-Management-System/]` |
+| **3** | **[Student Feedback Form](#3-student-feedback-form)** | HTML5, CSS3, Vanilla JS | Interactive feedback form with validation, browser storage, and session-based user tracking. | `[./Student-Feedback-form/]` |
 
 ---
 
@@ -71,6 +72,22 @@ Navigate into `Student-Management-System/` and open `index.html` in any desktop 
 
 ---
 
+### 3. Student Feedback Form
+Located in: [`./Student-Feedback-form/`](file:///C:/Users/hp/Documents/Assignment-Backend/Student-Feedback-form/index.html)
+
+A simple and practical feedback submission app where students can enter their name, email, selected course, and feedback. The form includes validation checks, saves the data in the browser using `localStorage`, and displays the current session user with `sessionStorage`.
+
+#### ✨ Core Features:
+- **Client-Side Input Validation:** Displays clear error messages for missing or invalid user input.
+- **Persistent Data Storage:** Stores feedback details locally in the browser for later viewing.
+- **Session Tracking:** Keeps track of the current session user after successful submission.
+- **Delete Stored Data:** Allows the user to clear the saved feedback and session information.
+
+#### 🛠️ How to Run:
+Navigate into `Student-Feedback-form/` and open `index.html` in any desktop or mobile web browser.
+
+---
+
 ## 🌲 Repository Structure
 
 ```text
@@ -81,6 +98,10 @@ Navigate into `Student-Management-System/` and open `index.html` in any desktop 
  ┃ ┣ 📜 style.css
  ┃ ┗ 📜 script.js
  ┣ 📂 Student-Management-System
+ ┃ ┣ 📜 index.html
+ ┃ ┣ 📜 style.css
+ ┃ ┗ 📜 script.js
+ ┣ 📂 Student-Feedback-form
  ┃ ┣ 📜 index.html
  ┃ ┣ 📜 style.css
  ┃ ┗ 📜 script.js
